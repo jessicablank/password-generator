@@ -30,7 +30,17 @@ var charUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 
 //Generate Password Function begins with user setting length parameter
 function generatePassword() {
-var confirmLenth = prompt("Enter a number between 8 and 128 to set the password length");
+var confirmLength = prompt("Enter a number between 8 and 128 to set the password length.");
+confirmLength = parseInt(confirmLength);
+
+//Check to make sure user enter a number between 8 and 128. If not, ask user to try again. 
+if (!isNaN(confirmLength)&& confirmLength > 8 && confirmLength < 128) {
+  alert ("Your password will contain " + confirmLength + " characters");
+} else {
+  alert("Please enter a number between 8 - 128 to set password length.");
+  var confirmLength = prompt("Enter a number between 8 and 128 to set the password length.");
+}
+ 
 
 //Once password length is determined, other parameters can be established. 
 var confirmLower = confirm ("Do you want the password to contain lowercase letters? Click OK for yes or Cancel for no.");
@@ -73,7 +83,7 @@ console.log(passwordChar)
       
       var randomPassword = ""
       
-      for (var i = 0; i < confirmLenth; i++) {
+      for (var i = 0; i < confirmLength; i++) {
         randomPassword = randomPassword + passwordChar[Math.floor(Math.random() * passwordChar.length)];
         console.log(randomPassword)
       }
