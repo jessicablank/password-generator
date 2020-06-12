@@ -43,18 +43,18 @@ if (!isNaN(confirmLength)&& confirmLength > 8 && confirmLength < 128) {
  
 
 //Once password length is determined, other parameters can be established. 
-var confirmLower = confirm ("Do you want the password to contain lowercase letters? Click OK for yes or Cancel for no.");
-var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters? Click OK for yes or Cancel for no.");
-var confirmNumeric = confirm("Do you want the password to contain numbers? Click OK for yes or Cancel for no.");
-var confirmSpecial = confirm("Do you want the password to contain special characters? Click OK for yes or Cancel for no.");
+var confirmLower = confirm ("Do you want the password to contain lowercase letters?\n Click OK for yes or Cancel for no.");
+var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters?\n Click OK for yes or Cancel for no.");
+var confirmNumeric = confirm("Do you want the password to contain numbers?\n Click OK for yes or Cancel for no.");
+var confirmSpecial = confirm("Do you want the password to contain special characters?\n Click OK for yes or Cancel for no.");
 
 //While loop if user does not confirm any parameters
 while (confirmLower === false && confirmUpper === false && confirmNumeric === false && confirmSpecial === false){
   alert("ALERT! You must select at least one character type! Please try again.");
-  var confirmLower = confirm ("Do you want the password to contain lowercase letters? Click OK for yes or Cancel for no.");
-  var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters? Click OK for yes or Cancel for no.");
-  var confirmNumeric = confirm("Do you want the password to contain numbers? Click OK for yes or Cancel for no.");
-  var confirmSpecial = confirm("Do you want the password to contain special characters? Click OK for yes or Cancel for no.");
+  var confirmLower = confirm ("Do you want the password to contain lowercase letters?\n Click OK for yes or Cancel for no.");
+  var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters?\n Click OK for yes or Cancel for no.");
+  var confirmNumeric = confirm("Do you want the password to contain numbers?\n Click OK for yes or Cancel for no.");
+  var confirmSpecial = confirm("Do you want the password to contain special characters? \n Click OK for yes or Cancel for no.");
 
 }
 
