@@ -2,7 +2,7 @@
 https://jessicablank.github.io/password-generator/
 
 Link to screen shot of first action after button push:
-https://github.com/jessicablank/password-generator/blob/master/assets/InitialPromptScreenShot.png
+https://github.com/jessicablank/password-generator/blob/master/assets/InitialPromptScreenShot.PNG
 
 
 Criteria: When the user clicks the "generate code" button, the app asks user about criteria for a randomly generated password based on criteria. The first criteria is the user must enter a number to designate character length between 8 and 128 characters. The code cannot move on without this criteria. 
