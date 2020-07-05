@@ -32,50 +32,44 @@ generatePassword = () => {
 
 
   //Check to make sure user enter a number between 8 and 128. If not, ask user to try again. 
- let confirmLength
- //recursion
-  promptCheck = () => {
+  let confirmLength;
+  // recursion
+  promptLengthCheck = () => {
     confirmLength = prompt("Enter a number between 8 and 128 to set the password length.");
     confirmLength = parseInt(confirmLength);
     if (!isNaN(confirmLength) && confirmLength > 7 && confirmLength < 129) {
-      alert("Your password will contain " + confirmLength + " characters");
+      console.log("Your password will contain " + confirmLength + " characters");
     } else {
-      alert("That's not the correct length! Try again!")
-      promptCheck()
+      alert("Please enter a number between 8 and 128. Try again!")
+      promptLengthCheck();
     }
   }
-  promptCheck()
+  promptLengthCheck();
 
-//   //While Loop
-//  let confirmLength = 0;
-//   while(!isNaN(confirmLength) && confirmLength > 7 && confirmLength < 129){
-//     confirmLength = prompt("Enter a number between 8 and 128 to set the password length.");
-//     confirmLength = parseInt(confirmLength);
-//   }
-
-
-
-  // else {
-  //   alert("Please enter a number between 8 - 128 to set password length.");
-  //   confirmLength = prompt("Enter a number between 8 and 128 to set the password length.");
-  // }
-
+  let confirmLower;
+  let confirmUpper;
+  let confirmNumeric;
+  let confirmSpecial;
 
   //Once password length is determined, other parameters can be established. 
-  var confirmLower = confirm("Do you want the password to contain lowercase letters?\n Click OK for yes or Cancel for no.");
-  var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters?\n Click OK for yes or Cancel for no.");
-  var confirmNumeric = confirm("Do you want the password to contain numbers?\n Click OK for yes or Cancel for no.");
-  var confirmSpecial = confirm("Do you want the password to contain special characters?\n Click OK for yes or Cancel for no.");
-
-  //While loop if user does not confirm any parameters
-  while (confirmLower === false && confirmUpper === false && confirmNumeric === false && confirmSpecial === false) {
-    alert("ALERT! You must select at least one character type! Please try again.");
-    var confirmLower = confirm("Do you want the password to contain lowercase letters?\n Click OK for yes or Cancel for no.");
-    var confirmUpper = confirm("Do you want the password to contain UPPERCASE letters?\n Click OK for yes or Cancel for no.");
-    var confirmNumeric = confirm("Do you want the password to contain numbers?\n Click OK for yes or Cancel for no.");
-    var confirmSpecial = confirm("Do you want the password to contain special characters? \n Click OK for yes or Cancel for no.");
-
+  promptCharactersCheck = () => {
+    confirmLower = confirm("Do you want the password to contain lowercase letters?\n Click OK for yes or Cancel for no.");
+    confirmUpper = confirm("Do you want the password to contain UPPERCASE letters?\n Click OK for yes or Cancel for no.");
+    confirmNumeric = confirm("Do you want the password to contain numbers?\n Click OK for yes or Cancel for no.");
+    confirmSpecial = confirm("Do you want the password to contain special characters?\n Click OK for yes or Cancel for no.");
+    if (confirmLower === true && confirmUpper === true && confirmNumeric === true && confirmSpecial === true) {
+      console.log(confirmLower);
+      console.log(confirmUpper);
+      console.log(confirmNumeric);
+      console.log(confirmSpecial);
+    } else {
+      alert("At least one parameter must be confirmed. Try again!")
+      promptCharactersCheck();
+    }
   }
+
+  promptCharactersCheck();
+
 
   //Set a variable to put together the password from the arrays and the user inputs
   var passwordChar = []
