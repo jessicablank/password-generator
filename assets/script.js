@@ -72,7 +72,7 @@ generatePassword = () => {
 
 
   //Set a variable to put together the password from the arrays and the user inputs
-  var passwordChar = []
+  let passwordChar = []
 
   if (confirmLower) {
     passwordChar = passwordChar.concat(charLower)
@@ -94,9 +94,9 @@ generatePassword = () => {
 
   //Password generation conditions
 
-  var randomPassword = ""
+  let randomPassword = ""
 
-  for (var i = 0; i < confirmLength; i++) {
+  for (let i = 0; i < confirmLength; i++) {
     randomPassword = randomPassword + passwordChar[Math.floor(Math.random() * passwordChar.length)];
     console.log(randomPassword)
   }
