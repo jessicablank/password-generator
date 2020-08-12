@@ -7,7 +7,7 @@
 # Password Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Link to Deployed Website](https://jessicablank.github.io/password-generator/)
+[Link to Deployed Website](https://jessicablank.github.io/password-generator/)
 
 ## Description:  
  This is my second homework assignment during coding bootcamp. A front-end only javascript random character generator.
