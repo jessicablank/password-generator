@@ -1,8 +1,6 @@
 const input = document.getElementById('password');
+const alert = document.getElementsByClassName('alert');
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 
 function copyPassword() {
   //check for a new password, otherwise alert an error
@@ -11,9 +9,15 @@ function copyPassword() {
   input.setSelectionRange(0, 99999)
   document.execCommand("copy");
   } else {
-    alert("Please Generate a Password First")
+    $('.alert').removeClass('d-none').addClass('show');
   }
 }
+
+
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
   
 
   
