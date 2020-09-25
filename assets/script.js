@@ -101,7 +101,5 @@ generatePassword = () => {
     console.log(randomPassword)
   }
   return randomPassword;
-
 }
-
 
