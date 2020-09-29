@@ -26,9 +26,12 @@
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <div class="form-group">
+            <label for="passwordLength">Enter a number between 8 and 128 to set the password length:</label>
+            <input type="password" class="form-control" id="passwordLength" placeholder="Password length">
+          </div>
         </div>
-        <div class="card-body">
+        <div class="input-group">
           <input
             readonly
             type="text"
@@ -40,15 +43,16 @@
         <div class="card-footer">
           <button id="generate" class="btn btn-primary">Generate Password</button>
           <button
-           type="button" 
-           class="btn btn-secondary" 
-           onClick="copyPassword()" 
-           data-toggle="tooltip"
-           data-placement="right"
-           title="Copy to Clipboard">
-          <i class="fa fa-copy" aria-hidden="true"></i>
-        </button>
+          type="button" 
+          class="btn btn-secondary" 
+          onClick="copyPassword()" 
+          data-toggle="tooltip"
+          data-placement="right"
+          title="Copy to Clipboard">
+         <i class="fa fa-copy" aria-hidden="true"></i>
+       </button>
       </div>
+      
       <div class="alert alert-info d-none" role="alert">
         <strong>Please Generate a Password First</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
