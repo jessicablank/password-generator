@@ -15,8 +15,6 @@
 <!-- Font Awesome CSS Icons -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     
   </head>
   <body>
@@ -26,9 +24,10 @@
       </header>
       <div class="card">
         <div class="card-header">
-          <div class="form-group">
-            <label for="passwordLength">Enter a number between 8 and 128 to set the password length:</label>
-            <input type="password" class="form-control" id="passwordLength" placeholder="Password length">
+          <div class="slidecontainer">
+            <label for="passwordLength">Select a number between 8 and 128 to set the password length:</label>
+            <input type="range" min="8" max="180" class="slider" id="passwordLength" ">
+            <p>Desired Password Length: <span id="passwordLengthView"></span> Characters</p>
           </div>
         </div>
         <div class="input-group">
@@ -67,6 +66,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/script.js"></script>
   <script src="assets/copyBtn.js"></script>
+  <script src="assets/slider.js"></script>
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
