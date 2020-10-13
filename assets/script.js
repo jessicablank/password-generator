@@ -1,3 +1,6 @@
+//This is the  original Javascript File using alerts and confirms. 
+//This script is no longer connected to the index.html file. It's just for memories. 
+
 // Assignment Code
 const generateBtn = document.querySelector("#generate");
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/png">
      <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -19,16 +20,32 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
+  
       <div class="card">
-        <div class="card-header">
+        <div class="card-header text-center">
           <div class="slidecontainer">
-            <label for="passwordLength">Select a number between 8 and 128 to set the password length:</label>
+            <h1 id="header"><i class="fa fa-eye-slash" aria-hidden="true"></i> Password Generator <i class="fa fa-eye-slash" aria-hidden="true"></i></h1>
             <input type="range" min="8" max="180" class="slider" id="passwordLength" ">
-            <p>Desired Password Length: <span id="passwordLengthView"></span> Characters</p>
+            <p class="text-center font-weight-bold">Password Length: <span id="passwordLengthView"></span> Characters</p>
           </div>
+        
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lowerCase">
+            <label class="form-check-label" title="Check to Use Lowercase Letters" for="lowerCase">Use Lowercase Letters</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="upperCase">
+            <label class="form-check-label" title="Check to Use Uppercase Letters" for="upperCase">Use Uppercase Letters</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="numbers">
+            <label class="form-check-label" title="Check to Use Numbers" for="numbers">Use Numbers</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="specChars">
+            <label class="form-check-label" title="Check to Use Special Characters" for="specChars">Use Special Characters</label>
+          </div>
+         
         </div>
         <div class="input-group">
           <input
@@ -64,7 +81,7 @@
 
   <!-- JavaScript.  -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="assets/script.js"></script>
+  <script src="assets/pwGen.js"></script>
   <script src="assets/copyBtn.js"></script>
   <script src="assets/slider.js"></script>
 
