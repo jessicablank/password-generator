@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub](https://img.shields.io/github/followers/jessicablank?label=follow&style=social)
 
-[Link to Deployed Website](https://jessicablank.github.io/password-generator/)
+[Deployed on GitHub Pages: https://jessicablank.github.io/password-generator/](https://jessicablank.github.io/password-generator/)
 
 ## Description:  
  This was originally my second homework assignment during coding bootcamp. I remember being disappointed when I submitted this assignment that I didn't have time to add a "copy" button. When I came back to refactor this assignment after bootcamp, I decided to add some additional features. 
