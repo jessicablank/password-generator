@@ -65,3 +65,21 @@ function generatePassword(){
   return randomPassword;
 
 }
+
+//Function that disables the last checkbox from being unchecked so there is always at least one parameter set. 
+function disableOnlyCheckbox(){
+	let totalChecked = [lowercaseInput, uppercaseInput, numbersInput, specialCharsInput].filter(el => el.checked)
+	totalChecked.forEach(el => {
+		if(totalChecked.length == 1){
+			el.disabled = true;
+		}else{
+			el.disabled = false;
+		}
+	})
+}
+
+[lowercaseInput, uppercaseInput, numbersInput, specialCharsInput].forEach(el => {
+	el.addEventListener('click', () => {
+		disableOnlyCheckbox()
+	})
+})
