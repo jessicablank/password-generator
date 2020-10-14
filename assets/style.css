@@ -17,8 +17,8 @@ body,
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #8A2387;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #17a2b8, #ffc107, #17a2b8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #17a2b8, #ffc107, #17a2b8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 ;
 }
 
@@ -46,7 +46,7 @@ background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+
   appearance: none;
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
-  background: #8A2387; /* Slider background */
+  background: #007bff; /* Slider background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -64,14 +64,14 @@ background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #F27121; /* Slider Color*/
+  background:#ffc107; /* Slider Color*/
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background:#F27121; /* Slider Color */
+  background: #ffc107; /* Slider Color */
   cursor: pointer; /* Cursor on hover */
 }
 

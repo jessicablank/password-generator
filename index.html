@@ -31,7 +31,7 @@
             id="passwordLength"
             data-toggle="tooltip"
             data-placement="right"
-            title="Use Slider to Set Password Length">
+            title="Start Here">
             <p class="text-center font-weight-bold">Password Length: <span id="passwordLengthView"></span> Characters</p>
           </div>
         
@@ -53,7 +53,7 @@
           </div>
          
         </div>
-        <div class="input-group">
+        <div class="input-group form-control-lg">
           <input
             readonly
             type="text"
@@ -74,13 +74,22 @@
           </button>
           <button
           type="button" 
-          class="btn btn-secondary" 
+          class="btn btn-danger" 
           onClick="copyPassword()" 
           data-toggle="tooltip"
-          data-placement="right"
+          data-placement="bottom"
           title="Copy to Clipboard">
          <i class="fa fa-copy" aria-hidden="true"></i>
        </button>
+       <button
+          type="button" 
+          class="btn btn-warning"  
+          data-toggle="modal"
+          data-target="#infoModal"
+          title="More Information">
+         <i class="fa fa-question" aria-hidden="true"></i>
+       </button>
+       
       </div>
       <div class="alert alert-info d-none" role="alert">
         <strong>Please Generate a Password First</strong>
@@ -88,7 +97,32 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-       
+       <!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Are You Stuck? No Worries! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Follow These Easy Steps to Generate a Secure Password: </p> 
+        <ul>
+          <li>Start by Moving the Yellow Slider to Set The Desired Password Length.</li>
+          <li>Uncheck any Parameters That Do Not Meet Your Password Criteria. <em>At Least One Parameter Must Be Checked for the Generator to Function.</em> </li>
+          <li>Click the "Generate Password" button. </li>
+          <li>Copy the Password to the clipboard using the red button if desired. </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <p>If you have more questions, please contact the author at <a href="mailto:jessicablankemeier@gmail.com">jessicablankemeier@gmail.com</a></p>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
     <a class="github-corner" href="https://github.com/jessicablank/password-generator" target="_blank">
