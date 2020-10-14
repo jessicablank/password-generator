@@ -1,5 +1,7 @@
-// This is the refactored Javascript Code.
+
 const generateBtn = document.querySelector("#generate");
+
+//Default slider length
 let pwLength = 94;
 
 // Write password to the #password input
