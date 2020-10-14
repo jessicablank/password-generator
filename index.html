@@ -24,6 +24,7 @@
         <div class="card-header text-center">
           <div class="slidecontainer">
             <h1 id="header"><i class="fa fa-eye-slash" aria-hidden="true"></i> Password Generator <i class="fa fa-eye-slash" aria-hidden="true"></i></h1>
+            <p class="text-center font-weight-bold font-italic">Slide Box to Set Password Length </p>
             <input type="range" 
             min="8" 
             max="180" 
@@ -54,21 +55,19 @@
          
         </div>
         <div class="input-group form-control-lg">
-          <input
+          <textarea
             readonly
             type="text"
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
-          ></input>
+            wrap="hard"
+          ></textarea>
         </div>
         <div class="card-footer">
           <button
           type="button" 
            id="generate"
-           data-toggle="tooltip"
-           data-placement="bottom"
-           title="Click After Setting Parameters"
            class="btn btn-primary">
            Generate Password
           </button>
@@ -77,7 +76,7 @@
           class="btn btn-danger" 
           onClick="copyPassword()" 
           data-toggle="tooltip"
-          data-placement="bottom"
+          data-placement="right"
           title="Copy to Clipboard">
          <i class="fa fa-copy" aria-hidden="true"></i>
        </button> 

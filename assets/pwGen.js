@@ -1,6 +1,6 @@
-// Assignment Code
+// This is the refactored Javascript Code.
 const generateBtn = document.querySelector("#generate");
-let pwLength;
+let pwLength = 94;
 
 // Write password to the #password input
 writePassword = () => {
