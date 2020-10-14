@@ -20,29 +20,35 @@
   </head>
   <body>
     <div class="wrapper">
-  
       <div class="card">
         <div class="card-header text-center">
           <div class="slidecontainer">
             <h1 id="header"><i class="fa fa-eye-slash" aria-hidden="true"></i> Password Generator <i class="fa fa-eye-slash" aria-hidden="true"></i></h1>
-            <input type="range" min="8" max="180" class="slider" id="passwordLength" ">
+            <input type="range" 
+            min="8" 
+            max="180" 
+            class="slider"
+            id="passwordLength"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Use Slider to Set Password Length">
             <p class="text-center font-weight-bold">Password Length: <span id="passwordLengthView"></span> Characters</p>
           </div>
         
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="lowerCase">
+            <input class="form-check-input mb-3" type="checkbox" checked="checked" id="lowerCase">
             <label class="form-check-label" title="Check to Use Lowercase Letters" for="lowerCase">Use Lowercase Letters</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="upperCase">
+            <input class="form-check-input" type="checkbox"  checked="checked" id="upperCase">
             <label class="form-check-label" title="Check to Use Uppercase Letters" for="upperCase">Use Uppercase Letters</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="numbers">
+            <input class="form-check-input" type="checkbox"  checked="checked" id="numbers">
             <label class="form-check-label" title="Check to Use Numbers" for="numbers">Use Numbers</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="specChars">
+            <input class="form-check-input" type="checkbox" checked="checked" id="specChars">
             <label class="form-check-label" title="Check to Use Special Characters" for="specChars">Use Special Characters</label>
           </div>
          
@@ -57,7 +63,15 @@
           ></input>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn btn-primary">Generate Password</button>
+          <button
+          type="button" 
+           id="generate"
+           data-toggle="tooltip"
+           data-placement="bottom"
+           title="Click After Setting Parameters"
+           class="btn btn-primary">
+           Generate Password
+          </button>
           <button
           type="button" 
           class="btn btn-secondary" 
@@ -68,7 +82,6 @@
          <i class="fa fa-copy" aria-hidden="true"></i>
        </button>
       </div>
-      
       <div class="alert alert-info d-none" role="alert">
         <strong>Please Generate a Password First</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -83,7 +96,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/pwGen.js"></script>
   <script src="assets/copyBtn.js"></script>
-  <script src="assets/slider.js"></script>
+  
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
