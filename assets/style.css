@@ -85,9 +85,15 @@ background: linear-gradient(to right, #17a2b8, #ffc107, #17a2b8); /* W3C, IE 10+
   box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 1px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  
+  /* center on page */
+  
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position:absolute;
 }
 
 .card-header::after {
