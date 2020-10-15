@@ -26,10 +26,11 @@
   <body>
     <div class="container-fluid">
       <div class="row mt-3">
+        <!-- Empty Column to Center Main Column -->
         <div class="col-lg-4">
         </div>
+         <!-- Begin Main Column -->
         <div class="col-lg-4">
-        
       <div class="card">
         <div class="card-header">
           <div class="slidecontainer">
@@ -119,7 +120,7 @@
           ></textarea>
         </div>
         <div class="card-footer text-center">
-          <button type="button" id="generate" class="btn btn-primary mb-1">
+          <button type="button" id="generate" class="btn btn-primary">
             Generate Password
           </button>
           <button
@@ -132,6 +133,9 @@
           >
             <i class="fa fa-copy" aria-hidden="true"></i>
           </button>
+          <!-- Successful Copy SnackBar -->
+<div id="snackbar">Copied! </div>
+          <!-- Octocat in the Corner -->
           <a
             class="github-corner"
             href="https://github.com/jessicablank/password-generator"
@@ -160,7 +164,8 @@
             </svg>
           </a>
         </div>
-        <div class="alert alert-info d-none" role="alert">
+        <!-- Alert if Password is Empty -->
+        <div class="alert alert-warning d-none" role="alert">
           <strong>Please Generate a Password First</strong>
           <button
             type="button"
@@ -173,6 +178,7 @@
         </div>
       </div>
       </div>
+      <!-- Empty Column to Center Main Column -->
       <div class="col-lg-4">
       </div>
     </div>
