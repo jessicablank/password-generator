@@ -1,3 +1,9 @@
+//This readies all tooltips
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+  
+
 const input = document.getElementById('password');
 const alert = document.getElementsByClassName('alert');
 
@@ -14,10 +20,6 @@ function copyPassword() {
 }
 
 
-//This readies all tooltips
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-  
+
 
   
