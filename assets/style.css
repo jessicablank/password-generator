@@ -43,6 +43,8 @@ body {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
+  height: 15px; /* Making it round */
+  border-radius: 5px; /* Making it round */
   height: 25px; /* Specified height */
   background: #007bff; /* Slider background */
   outline: none; /* Remove outline */
@@ -62,6 +64,7 @@ body {
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
+  border-radius: 50%; /* Making it round */
   background:#ffc107; /* Slider Color*/
   cursor: pointer; /* Cursor on hover */
 }
@@ -69,6 +72,7 @@ body {
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
+  border-radius: 50%; /* Making it round */
   background: #ffc107; /* Slider Color */
   cursor: pointer; /* Cursor on hover */
 }
