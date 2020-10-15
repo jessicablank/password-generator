@@ -14,7 +14,7 @@ function copyPassword() {
 }
 
 
-
+//This readies all tooltips
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });

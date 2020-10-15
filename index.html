@@ -5,52 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/png">
-     <!-- Bootstrap Stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon.ico" type="image/png" />
+    <!-- Bootstrap Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-<!-- My CSS Stylesheet -->
-<link rel="stylesheet" href="assets/style.css" media="screen">
+    <!-- My CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css" media="screen" />
 
-<!-- Font Awesome CSS Icons -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-
-    
+    <!-- Font Awesome CSS Icons -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="wrapper">
-      
-      <div class="card">
-        <div class="card-header p-2 m-2">
-          <div class="slidecontainer">
-            <h1 id="header"><i class="fa fa-eye-slash" aria-hidden="true"></i> Password Generator <i class="fa fa-eye-slash" aria-hidden="true"></i></h1>
-            <p class="text-center font-weight-bold font-italic">Use Slider to Set Password Length </p>
-            <input type="range" 
-            min="8" 
-            max="180" 
-            class="slider"
-            id="passwordLength">
-            <p class="text-center font-weight-bold">Password Length: <span id="passwordLengthView"></span> Characters</p>
-          </div>
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
         
+      <div class="card">
+        <div class="card-header">
+          <div class="slidecontainer">
+            <h1 id="header">Password
+              Generator <br><i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </h1>
+            <p class="text-center font-weight-bold font-italic">
+              Use Slider to Set Password Length
+            </p>
+            <input
+              type="range"
+              min="8"
+              max="180"
+              class="slider"
+              id="passwordLength"
+            />
+            <p class="text-center font-weight-bold">
+              Password Length: <span id="passwordLengthView"></span> Characters
+            </p>
+          </div>
+
           <div class="form-check">
-            <input class="form-check-input mb-3" type="checkbox" checked="checked" id="lowerCase">
-            <label class="form-check-label" title="Check to Use Lowercase Letters" for="lowerCase">Use Lowercase Letters</label>
+            <input
+              class="form-check-input mb-3"
+              type="checkbox"
+              checked="checked"
+              id="lowerCase"
+            />
+            <label
+              class="form-check-label"
+              title="Check to Use Lowercase Letters"
+              for="lowerCase"
+              >Use Lowercase Letters</label
+            >
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox"  checked="checked" id="upperCase">
-            <label class="form-check-label" title="Check to Use Uppercase Letters" for="upperCase">Use Uppercase Letters</label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              checked="checked"
+              id="upperCase"
+            />
+            <label
+              class="form-check-label"
+              title="Check to Use Uppercase Letters"
+              for="upperCase"
+              >Use Uppercase Letters</label
+            >
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox"  checked="checked" id="numbers">
-            <label class="form-check-label" title="Check to Use Numbers" for="numbers">Use Numbers</label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              checked="checked"
+              id="numbers"
+            />
+            <label
+              class="form-check-label"
+              title="Check to Use Numbers"
+              for="numbers"
+              >Use Numbers</label
+            >
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" checked="checked" id="specChars">
-            <label class="form-check-label" title="Check to Use Special Characters" for="specChars">Use Special Characters</label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              checked="checked"
+              id="specChars"
+            />
+            <label
+              class="form-check-label"
+              title="Check to Use Special Characters"
+              for="specChars"
+              >Use Special Characters</label
+            >
           </div>
-         
         </div>
         <div class="input-group form-control-lg">
           <textarea
@@ -63,58 +119,86 @@
           ></textarea>
         </div>
         <div class="card-footer text-center">
-          <button
-          type="button" 
-           id="generate"
-           class="btn btn-primary mb-1">
-           Generate Password
+          <button type="button" id="generate" class="btn btn-primary mb-1">
+            Generate Password
           </button>
           <button
-          type="button" 
-          class="btn btn-danger" 
-          onClick="copyPassword()" 
-          data-toggle="tooltip"
-          data-placement="right"
-          title="Copy to Clipboard">
-         <i class="fa fa-copy" aria-hidden="true"></i>
-       </button> 
+            type="button"
+            class="btn btn-danger"
+            onClick="copyPassword()"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Copy to Clipboard"
+          >
+            <i class="fa fa-copy" aria-hidden="true"></i>
+          </button>
+          <a
+            class="github-corner"
+            href="https://github.com/jessicablank/password-generator"
+            target="_blank"
+          >
+            <svg
+              width="80"
+              height="80"
+              viewbox="0 0 250 250"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Visit Me on GitHub"
+            >
+              <path d="M0 0h250v250" />
+              <path
+                class="octo-arm"
+                d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2"
+                fill="currentColor"
+                style="transform-origin: 130px 110px"
+              />
+              <path
+                class="octo-body"
+                d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="alert alert-info d-none" role="alert">
+          <strong>Please Generate a Password First</strong>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div>
-      <div class="alert alert-info d-none" role="alert">
-        <strong>Please Generate a Password First</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-    
+      <div class="col-lg-4">
       </div>
     </div>
-    <a class="github-corner" href="https://github.com/jessicablank/password-generator" target="_blank">
-      <svg width="80" height="80" viewbox="0 0 250 250"
-      data-toggle="tooltip"
-           data-placement="bottom"
-           title="Visit Me on GitHub"
-      >
-        <path d="M0 0h250v250" />
-        <path class="octo-arm" d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px;" />
-        <path class="octo-body" d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" />
-      </svg>
-    </a>
+  </div>
+</div>
 
-  <!-- JavaScript.  -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="assets/pwGen.js"></script>
-  <script src="assets/copyBtn.js"></script>
-  
+    <!-- JavaScript.  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/pwGen.js"></script>
+    <script src="assets/copyBtn.js"></script>
 
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-  crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
