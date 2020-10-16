@@ -40,13 +40,15 @@ I returned after bootcamp to add a `copy` button. Once the button successfully c
 
 - **Uppercase letters, Lowercase Letters, Numbers, and Special Characters**: In the first version, users would click "OK" or "Cancel" on confirm boxes to set these parameters. If none were set, the user would receive an error. By switching to checkboxes, I could add code to eliminate the need for an error message. Now if the user unchecks three parameters, the final checkbox will be disabled and automatically become the default parameter for password generation. 
 
-I added a few more bells and whistles found through Google-Fu. My favorite addition is a waving Octocat link to this GitHub repo. I thought I was done until something AMAZING happened! :sparkles: Another Github user reviewed my code  and noted the card was not mobile-responsive.
+I added a few more bells and whistles found through Google-Fu. My favorite addition is a waving Octocat link to this GitHub repo. I thought I was done until something AMAZING happened! :sparkles: Another Github user reviewed my code  and noted the card was not mobile-responsive. Thank you Sawyer!
 
-I had continued to rely on the starter code during refactoring despite bringing in Bootstrap to style the copy button. The resulting mobile display was cringe-worthy. The header was not visible. Tool tips crowded the screen. It was a mess. 
+I had continued to rely on the starter code during refactoring after bringing in Bootstrap. All I had to do was complete the Bootstrap styling and remove unnecessary CSS.  
 
-So huge props to my first contributor. Sawyer recommended vertically aligning the card. I settled on utilizing Bootstrap's built-in mobile responsive capabilities. Now the final product looks nothing like the first version. The output is the same, but the user experience and usefulness is improved! 
+I asked some friends for their review. They graciously reported the interface as intuitive and functional. One user said:
 
-I asked some friends for their review. They graciously reported the interface as intuitive and functional. Not as fun as a [random burger generator](https://secure-shore-09876.herokuapp.com/ "Eat Da Burger Project"), but everyone who uses the internet needs a secure password. 
+> I spent a sad amount of time trying to get it to make a real word at 8 characters and was not successful. So...it works!
+ 
+All my test users agree this is not as fun as a [random burger generator](https://secure-shore-09876.herokuapp.com/ "Eat Da Burger Project"), but everyone who uses the internet needs a secure password. 
 
 ![Refactored](assets/images/refactored.gif "Refactored version")
 
