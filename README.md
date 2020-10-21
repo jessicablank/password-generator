@@ -1,8 +1,8 @@
 # Password Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Last Commit](https://img.shields.io/github/last-commit/jessicablank/password-generator)
-[![GitHub issues](https://img.shields.io/github/issues/jessicablank/eat-da-burger)](https://github.com/jessicablank/password-generator/issues)
-[![GitHub stars](https://img.shields.io/github/stars/jessicablank/eat-da-burger)](https://github.com/jessicablank/password-generator/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/jessicablank/password-generator)](https://github.com/jessicablank/password-generator/issues)
+[![GitHub stars](https://img.shields.io/github/stars/jessicablank/password-generator)](https://github.com/jessicablank/password-generator/stargazers)
 ![GitHub](https://img.shields.io/github/followers/jessicablank?label=follow&style=social)
 
 [Deployed on GitHub Pages: https://jessicablank.github.io/password-generator/](https://jessicablank.github.io/password-generator/)
@@ -10,8 +10,7 @@
 
 
 ## Description:  
- This was originally my second homework assignment during coding bootcamp. After bootcamp, I returned and added some fun features. 
-
+ This was originally my second homework assignment during coding bootcamp. I returned after bootcamp to add some fun features. 
     
 ## Table of Contents:
 * [Project Story](#project-story)
@@ -29,20 +28,26 @@ The Minimum Viable Product (MVP) for this assignment required the following to g
 - The input must be validated. 
 - The password is either displayed in an alert of written to the page. 
 
-I did my best with vanilla Javascript given starter HTML and CSS. The result was not user-friendly, but it worked as required. 
+I did my best with vanilla Javascript given starter code in HTML and CSS. The result worked as required:
 
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
 I returned after bootcamp to add a `copy` button. Once the button successfully copied the password to the clipboard, I started researching other ways to get user input for the password criteria. 
 
-- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field or receive an error. I switched this input to a range slider so the user would not have the opportunity to enter a password length outside of the requirements. The range slider has a default value of 94. This allows the user to create a secure password quickly without any length input. 
+- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of the range parameters. I eliminated the need for an error message by changing this input method to a range slider. 
+
+![RangeSlider](assets/images/rangeslider.gif "Range Slider")
 
 - **Uppercase letters, Lowercase Letters, Numbers, and Special Characters**: In the first version, users would click "OK" or "Cancel" on confirm boxes to set these parameters. If none were set, the user would receive an error. By switching to checkboxes, I could add code to eliminate the need for an error message. Now if the user unchecks three parameters, the final checkbox will be disabled and automatically become the default parameter for password generation. 
 
-I added a few more bells and whistles found through Google-Fu. My favorite addition is a waving Octocat link to this GitHub repo. I thought I was done until something AMAZING happened! :sparkles: Another Github user reviewed my code  and noted the card was not mobile-responsive. Thank you Sawyer!
+![Checkboxes](assets/images/checkboxes.gif "Checkboxes")
 
-I had continued to rely on the starter code during refactoring after bringing in Bootstrap. All I had to do was complete the Bootstrap styling and remove unnecessary CSS.  
+- **Octocat and More**: My favorite addition found through Google-Fu is a waving Octocat link to this GitHub repo. I thought I was done until something AMAZING happened! :sparkles: Another Github user reviewed my code  and noted the card was not mobile-responsive. **Thank You Sawyer!**
+
+ All I had to do was complete the Bootstrap styling and remove unnecessary CSS.  
+
+ ![Octocat](assets/images/octocat.gif "Octocat")
 
 I asked some friends for their review. They graciously reported the interface as intuitive and functional. One user said:
 
