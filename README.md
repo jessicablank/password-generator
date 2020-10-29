@@ -49,7 +49,7 @@ I returned after bootcamp and successfully added a button to copy the password t
 
 - **Mobile-Responsive**: Something AMAZING happened! :sparkles: Another Github user forked and reviewed my project. Sawyer noted the card was not mobile-responsive. **Thank You Sawyer!** I completed the Bootstrap styling implementation and removed unnecessary CSS.  
 
-- ** User-Review** I sent the link via text to friends for their review. They graciously reported the interface as intuitive and functional. One user said:
+- **User-Review**: I sent the link via text to friends for their review. They graciously reported the interface as intuitive and functional. One user said:
 
 > I spent a sad amount of time trying to get it to make a real word at 8 characters and was not successful. So...it works!
  
