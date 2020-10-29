@@ -10,7 +10,7 @@
 
 
 ## Description:  
- This was originally my second homework assignment during coding bootcamp. I returned after bootcamp to add some fun features. 
+ This was originally my second homework assignment during coding bootcamp. I returned after bootcamp to improve the user experience. 
     
 ## Table of Contents:
 * [Project Story](#project-story)
@@ -28,28 +28,28 @@ The Minimum Viable Product (MVP) for this assignment required the following to g
 - The input must be validated. 
 - The password is either displayed in an alert of written to the page. 
 
-I did my best with vanilla Javascript given starter code in HTML and CSS. The result worked as required:
+I added vanilla Javascript given starter code in HTML and CSS. The result worked as required. I received an "A" on the assignment. I made a note to myself that I would use this application if it had a `copy` button to copy the password to the clipboard. 
 
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
-I returned after bootcamp to add a `copy` button. Once the button successfully copied the password to the clipboard, I started researching other ways to get user input for the password criteria. 
+I returned after bootcamp and successfully added a button to copy the password to the clipboard. I reviewed the design again and decided to improve the user experience by eliminating the alert and confirm boxes. 
 
-- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of the range parameters. I eliminated the need for an error message by changing this input method to a range slider. 
+- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. I eliminated the need for an error message by changing this input method to a **range slider**. 
 
 ![RangeSlider](assets/images/rangeslider.gif "Range Slider")
 
-- **Uppercase letters, Lowercase Letters, Numbers, and Special Characters**: In the first version, users would click "OK" or "Cancel" on confirm boxes to set these parameters. If none were set, the user would receive an error. By switching to checkboxes, I could add code to eliminate the need for an error message. Now if the user unchecks three parameters, the final checkbox will be disabled and automatically become the default parameter for password generation. 
+- **Uppercase letters, Lowercase Letters, Numbers, and Special Characters**: In the first version, users would click "OK" or "Cancel" on confirm boxes to set these parameters. If none were set, the user would receive an error. By switching to **checkboxes**, I could add code to eliminate the need for an error message. Now if the user unchecks three parameters, the final checkbox will be disabled and automatically become the default parameter for password generation. 
 
 ![Checkboxes](assets/images/checkboxes.gif "Checkboxes")
 
-- **Octocat and More**: My favorite addition found through Google-Fu is a waving Octocat link to this GitHub repo. I thought I was done until something AMAZING happened! :sparkles: Another Github user reviewed my code  and noted the card was not mobile-responsive. **Thank You Sawyer!**
+- **Octocat**: My favorite addition found through Google-Fu is a waving Octocat link to this GitHub repo.
 
- All I had to do was complete the Bootstrap styling and remove unnecessary CSS.  
+![Octocat](assets/images/octocat.gif "Octocat")
 
- ![Octocat](assets/images/octocat.gif "Octocat")
+- **Mobile-Responsive**: Something AMAZING happened! :sparkles: Another Github user forked and reviewed my project. Sawyer noted the card was not mobile-responsive. **Thank You Sawyer!** I completed the Bootstrap styling implementation and removed unnecessary CSS.  
 
-I asked some friends for their review. They graciously reported the interface as intuitive and functional. One user said:
+- ** User-Review** I sent the link via text to friends for their review. They graciously reported the interface as intuitive and functional. One user said:
 
 > I spent a sad amount of time trying to get it to make a real word at 8 characters and was not successful. So...it works!
  
@@ -66,7 +66,7 @@ Ready to run in your favorite code editor. Fork, download, or clone.
 - [patterncooler.com](https://www.patterncooler.com/)
 
 ## Questions
-You can reach the author, Jessica Blankemeier,  via [github](http://github.com/jessicablank) and [email](mailto:jessicablankemeier@gmail.com)
+You can reach the author, Jessica Blankemeier, via [jessicablankemeier@gmail.com](mailto:jessicablankemeier@gmail.com)
 
 
 ## License
