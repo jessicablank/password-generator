@@ -16,6 +16,7 @@
 * [Project Story](#project-story)
 * [Local Installation](#local-installation)
 * [Technologies Used](#technologies-used)
+* [File Structure](#file-structure)
 * [Questions](#questions)
 * [License](#license-info)
 
@@ -64,6 +65,19 @@ Ready to run in your favorite code editor. Fork, download, or clone.
 - [Bootstrap](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [patterncooler.com](https://www.patterncooler.com/)
+
+## File Structure
+
+```
+├── assets
+|  ├── copyBtn.js <--Handles Copy Button Functionality-->
+|  ├── favicon.ico
+|  ├── images
+|  ├── pwGen.js <--Handles password criteria inputs and generates output -->
+|  └── style.css
+├── index.html
+└── README.md
+```
 
 ## Questions
 You can reach the author, Jessica Blankemeier, via [jessicablankemeier@gmail.com](mailto:jessicablankemeier@gmail.com)
