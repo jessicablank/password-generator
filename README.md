@@ -29,14 +29,12 @@ The Minimum Viable Product (MVP) for this assignment required the following to g
 - The input must be validated. 
 - The password is either displayed in an alert or written to the page. 
 
-I added vanilla Javascript given starter code in HTML and CSS. The result worked as required. I received an "A" on the assignment.
-
-I had recently learned how to use the project management features of GitHub, so I created an issue for myself to update this project with a `copy` button to copy the randomly generated password to the clipboard. 
+I added vanilla Javascript given starter code in HTML and CSS. The result worked as required. I received an "A" on the assignment; however, I wanted to add a `copy` button to copy the newly generated password to the clipboard. I decided to create an issue and kanban board for this project and return to it after boot camp classes were finished. 
 
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
-Once I returned to this project, I realized I now had the skills and knowledge to make this project more functional. I decided to improve the overall user experience while meeting the project requirements. 
+Once I returned to this project, I realized I now had the skills and knowledge not only to add a `copy` button, but also to improve the user input methods to make this project more functional. I decided to improve the overall user experience while continuing to meet the project requirements. 
 
 - **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. Changing this input method to a **range slider** eliminates the need for an error message, 
 
@@ -56,7 +54,7 @@ Once I returned to this project, I realized I now had the skills and knowledge t
 
 > I spent a sad amount of time trying to get it to make a real word at 8 characters and was not successful. So...it works!
  
-All my test users agree this is not as fun as a [random burger generator](https://secure-shore-09876.herokuapp.com/ "Eat Da Burger Project"), but they agreed this is a useful application for quickly generating a secure password. 
+All my test users agree this is not as fun as a [random burger generator like the one over at https://secure-shore-09876.herokuapp.com/](https://secure-shore-09876.herokuapp.com/ "Eat Da Burger Project"), but they agreed this is a useful application for quickly generating a secure password. 
 
 ![Refactored](assets/images/refactored.gif "Refactored version")
 
