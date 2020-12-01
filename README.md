@@ -10,7 +10,7 @@
 
 
 ## Description:  
- This was originally my second homework assignment during coding bootcamp. I returned after bootcamp to improve the user experience. 
+ This was originally my second homework assignment during coding boot camp. I returned after boot camp classes ended to improve the user experience. 
     
 ## Table of Contents:
 * [Project Story](#project-story)
@@ -27,14 +27,16 @@ The Minimum Viable Product (MVP) for this assignment required the following to g
 - Upon clicking the `Generate Password` button, the user must set the password length of at least 8 characters and no more than 128 characters. 
 - After confirming the password length, the user must choose lowercase, uppercase, numeric and/or special characters. 
 - The input must be validated. 
-- The password is either displayed in an alert of written to the page. 
+- The password is either displayed in an alert or written to the page. 
 
-I added vanilla Javascript given starter code in HTML and CSS. The result worked as required. I received an "A" on the assignment. I made a note to myself that I would use this application if it had a `copy` button to copy the password to the clipboard. 
+I added vanilla Javascript given starter code in HTML and CSS. The result worked as required. I received an "A" on the assignment.
+
+I had recently learned how to use the project management features of GitHub, so I created an issue for myself to update this project with a `copy` button to copy the randomly generated password to the clipboard. 
 
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
-I returned after bootcamp and successfully added a button to copy the password to the clipboard. I reviewed the design again and decided to improve the user experience by eliminating the alert and confirm boxes. 
+Once I returned to this project, I realized I now had the skills and knowledge to make this project more functional. I decided not only to add a `copy` button, but also to improve the user experience by eliminating the alert and confirm boxes. 
 
 - **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. I eliminated the need for an error message by changing this input method to a **range slider**. 
 
@@ -48,7 +50,7 @@ I returned after bootcamp and successfully added a button to copy the password t
 
 ![Octocat](assets/images/octocat.gif "Octocat")
 
-- **Mobile-Responsive**: Something AMAZING happened! :sparkles: Another Github user forked and reviewed my project. Sawyer noted the card was not mobile-responsive. **Thank You Sawyer!** I completed the Bootstrap styling implementation and removed unnecessary CSS.  
+- **Mobile-Responsive**: Something AMAZING happened! :sparkles: Another Github user forked and reviewed my project. Sawyer noted the card was not mobile-responsive. **Thank You Sawyer!** I completed the Bootstrap styling implementation and removed unnecessary CSS to allow for mobile-responsive display.  
 
 - **User-Review**: I sent the link via text to friends for their review. They graciously reported the interface as intuitive and functional. One user, **Jameson**, said:
 
