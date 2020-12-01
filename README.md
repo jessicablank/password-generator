@@ -10,7 +10,7 @@
 
 
 ## Description:  
- This was originally my second homework assignment during coding boot camp. I returned after boot camp classes ended to improve the user experience. 
+ This was originally my second homework assignment during coding boot camp. I returned after classes ended to improve the user experience. 
     
 ## Table of Contents:
 * [Project Story](#project-story)
@@ -36,9 +36,9 @@ I had recently learned how to use the project management features of GitHub, so 
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
-Once I returned to this project, I realized I now had the skills and knowledge to make this project more functional. I decided not only to add a `copy` button, but also to improve the user experience by eliminating the alert and confirm boxes. 
+Once I returned to this project, I realized I now had the skills and knowledge to make this project more functional. I decided to improve the overall user experience while meeting the project requirements. 
 
-- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. I eliminated the need for an error message by changing this input method to a **range slider**. 
+- **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. Changing this input method to a **range slider** eliminates the need for an error message, 
 
 ![RangeSlider](assets/images/rangeslider.gif "Range Slider")
 
