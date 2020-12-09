@@ -87,3 +87,5 @@ You can reach the author, Jessica Blankemeier, via [jessicablankemeier@gmail.com
 Copyright 2020 - present Jessica Blankemeier.
 This project is licensed under the terms of the MIT license. 
 More information is available at [opensource.org/licenses](https://opensource.org/licenses/MIT)
+
+[Back to Top](#table-of-contents)
