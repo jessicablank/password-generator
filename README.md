@@ -15,7 +15,7 @@
 ## Table of Contents:
 * [Project Story](#project-story)
 * [Local Installation](#local-installation)
-* [Technologies Used](#technologies-used)
+* [Technologies and Resources](#technologies-and-resources)
 * [File Structure](#file-structure)
 * [Questions](#questions)
 * [License](#license-info)
@@ -34,7 +34,7 @@ I added vanilla Javascript given starter code in HTML and CSS. The result worked
 ![Original](assets/images/original.gif "Original submission in action")
 
 ### Refactored
-Once I returned to this project, I realized I now had the skills and knowledge not only to add a `copy` button, but also to improve the user input methods to make this project more functional. I decided to improve the overall user experience while continuing to meet the project requirements. 
+Once I returned to this project, I realized I now had the Google skills and knowledge not only to add a `copy` button, but also to improve the user input methods to make this project more functional. I decided to improve the overall user experience while continuing to meet the project requirements. 
 
 - **Password Length**: Originally the user was required to input a numeric value between 8 and 128 into a field. The user would receive an error message if the numeric value entered was outside of those range parameters. Changing this input method to a **range slider** eliminates the need for an error message, 
 
@@ -61,9 +61,11 @@ All my test users agree this is not as fun as a [random burger generator like th
 ## Local Installation
 Ready to run in your favorite code editor. Fork, download, or clone. 
 
-## Technologies Used
+## Technologies and Resources
 - [Bootstrap](https://getbootstrap.com/)
+- [Disabling Checkbox Inspiration](https://github.com/devloop01/password-generator)
 - [Font Awesome](https://fontawesome.com/)
+- [GitHub Corners](https://tholman.com/github-corners/)
 - [patterncooler.com](https://www.patterncooler.com/)
 
 ## File Structure
