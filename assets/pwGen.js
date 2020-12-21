@@ -23,8 +23,6 @@ slider.oninput = function() {
   pwLength = this.value;
 }
 
-
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
@@ -32,7 +30,7 @@ generateBtn.addEventListener("click", writePassword);
 const numbers = "0123456789";
 const specialChars = "!@#$%^&*()_+~`|}{[]:;?/-=";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const upperCase = lowerCase.toUpperCase();
 
 //Receive User Inputs
 const lowercaseInput = document.getElementById("lowerCase");
