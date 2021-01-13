@@ -1,9 +1,9 @@
-//This readies all tooltips
+//Ready Tooltips
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
-  
 
+//Create a snack bar to confirm password is copied or an alert if not successful
 const input = document.getElementById('password');
 const alert = document.getElementsByClassName('alert');
 

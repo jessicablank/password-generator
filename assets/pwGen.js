@@ -41,8 +41,11 @@ const specialCharsInput = document.getElementById("specChars");
 
 //Generate a Random Password!
 function generatePassword(){
+  //Set password output to a string
   randomPassword = "";
-  passwordCharSet="";
+  //Build a new array with user selections for characters from checkboxes
+  passwordCharSet=[];
+
   if(lowercaseInput.checked){
     passwordCharSet += lowerCase;
   }
@@ -56,10 +59,12 @@ function generatePassword(){
     passwordCharSet += specialChars;
   }
 
-  for (let i=0; i < pwLength; i++){
-    randomPassword += passwordCharSet.charAt(
-      Math.floor(Math.random() * passwordCharSet.length)
-    );
+  //Set the password length to user specifications
+  for (let i=1; i <= pwLength; i++){
+    //Build password string by randomly selecting characters from the character array 
+    let pwCharacters = Math.floor(Math.random() * passwordCharSet.length)
+    randomPassword += passwordCharSet.charAt(pwCharacters)
+    
   }
 
   return randomPassword;

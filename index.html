@@ -121,7 +121,7 @@
         </div>
         <article class="card-footer text-center">
           <button type="button" id="generate" class="btn btn-primary">
-            Generate Password <i class="fa fa-refresh" aria-hidden="true"></i>
+            Generate Password <i class="fa fa-eye-slash" aria-hidden="true"></i>
           </button>
           <button
             type="button"
@@ -130,6 +130,13 @@
           > Copy
             <i class="fa fa-copy" aria-hidden="true"></i>
           </button>
+          <button
+          type="button"
+          class="btn btn-dark m-1"
+          onClick=location.reload()
+        > Restart
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </button>
           
           <!-- Successful Copy SnackBar -->
             <div id="snackbar">Copied! </div>
